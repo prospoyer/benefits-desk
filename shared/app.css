@@ -567,3 +567,8 @@ input[type=range]{width:100%;accent-color:var(--accent)}
   .page-head .actions{margin-left:0}
   .kpi .v{font-size:22px}
 }
+@media (max-width:900px){
+  .card-f,.card-h{flex-wrap:wrap}
+  table.t{display:block;overflow-x:auto;max-width:100%}
+  .card-h .actions{margin-left:0}
+}
