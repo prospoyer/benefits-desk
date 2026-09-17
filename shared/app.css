@@ -556,3 +556,14 @@ input[type=range]{width:100%;accent-color:var(--accent)}
 .crumbs{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 @media (max-width:1400px){.saved-pill + .search{width:190px;overflow:hidden}.saved-pill + .search kbd{display:none}}
 .stack{align-content:start}
+
+/* ---------- phones and narrow windows: stack every layout ---------- */
+@media (max-width:900px){
+  .grid{grid-template-columns:minmax(0,1fr)!important}
+  .grid.g4{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+  .page{padding:18px 14px 48px}
+  .topbar{padding:0 12px;gap:8px}
+  .saved-pill span{display:none}
+  .page-head .actions{margin-left:0}
+  .kpi .v{font-size:22px}
+}
